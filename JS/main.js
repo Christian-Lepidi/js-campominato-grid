@@ -10,5 +10,9 @@ function generateCell(i) {
   const cell = document.createElement("div");
   cell.classList.add("box");
   cell.innerHTML = i;
+  cell.addEventListener("click", function () {
+    this.classList.toggle("clicked");
+    console.log(i);
+  });
   return cell;
 }
