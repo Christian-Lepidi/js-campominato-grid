@@ -38,12 +38,25 @@ main {
 }
 
 .box {
-  width: calc(100% / 10);
-  height: calc(100% / 10);
   border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.box.box-100 {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+}
+
+.box.box-81 {
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+}
+
+.box.box-49 {
+  width: calc(100% / 7);
+  height: calc(100% / 7);
 }
 
 .clicked {
